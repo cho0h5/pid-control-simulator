@@ -23,7 +23,7 @@ function drawArrow(degree) {
   // Arrow head
   ctx.beginPath();
   ctx.moveTo(endX, endY);
-  ctx.lineTo(endX, endY);
+  ctx.lineTo(endX + 15 * Math.cos(radian), endY + 15 * Math.sin(radian));
   ctx.stroke();
 
   ctx.beginPath();
@@ -32,11 +32,6 @@ function drawArrow(degree) {
   ctx.stroke();
 }
 
-ctx.translate(100, 0);
-ctx.rotate((10/ 180) * Math.PI);
-drawArrow(0);
-// drawArrow(45);
-// drawArrow(90);
-// drawArrow(135);
-// drawArrow(180);
-
+for (let i = 0; i <= 4; i++) {
+  drawArrow(i * 45);
+}
