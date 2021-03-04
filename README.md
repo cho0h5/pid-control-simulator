@@ -1,3 +1,3 @@
 # pid-control-simulator
 ## example
-https://dominoyh5.github.io/pid-control-simulator/index.html
+https://cho0h5.github.io/pid-control-simulator/
